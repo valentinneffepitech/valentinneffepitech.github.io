@@ -12,7 +12,6 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -28,11 +27,550 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#header {
+  padding: 2vh 0;
+  font-style: oblique;
 }
+
+#display_pokemon {
+  display: flex;
+  flex-direction: column;
+  max-height: 70vh;
+  overflow: scroll;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin-bottom: 5vh;
+}
+
+.element {
+  padding: 2vh 0;
+  border: 2px solid #ccc;
+  transition: background-color 0.1s ease-in;
+}
+
+.element:hover {
+  background-color: antiquewhite;
+}
+
+#nxt,
+#prev {
+  margin-top: 3vh;
+}
+
+#controls {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5vh;
+}
+
+#description {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80vw;
+}
+
+#list_pokemon {
+  overflow: scroll;
+  max-height: 50vh;
+}
+
+.fire {
+  color: white !important;
+  background-color: #E72324 !important;
+  text-shadow: 1px 1px 1px black;
+  width: 8vw;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin-right: 1rem;
+  margin-bottom: 1vh;
+}
+
+.theme-fire {
+  border-radius: 10% !important;
+  box-shadow: 0 0 18px #E72324;
+  transition: background-color 0.3s ease-in;
+}
+
+.theme-fire:hover {
+  cursor: pointer;
+  background-color: #E72324;
+}
+
+.steel {
+  color: white !important;
+  background-color: #60A3B9 !important;
+  text-shadow: 1px 1px 1px black;
+  width: 8vw;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin-right: 1rem;
+  margin-bottom: 1vh;
+}
+
+.theme-steel {
+  border-radius: 10% !important;
+  box-shadow: 0 0 18px #60A3B9;
+  transition: background-color 0.3s ease-in;
+}
+
+.theme-steel:hover {
+  cursor: pointer;
+  background-color: #60A3B9;
+}
+
+.dragon {
+  color: white !important;
+  background-color: #5B69E2 !important;
+  text-shadow: 1px 1px 1px black;
+  width: 8vw;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin-right: 1rem;
+  margin-bottom: 1vh;
+}
+
+.theme-dragon {
+  border-radius: 10% !important;
+  box-shadow: 0 0 18px #5B69E2;
+  transition: background-color 0.3s ease-in;
+}
+
+.theme-dragon:hover {
+  cursor: pointer;
+  background-color: #5B69E2;
+}
+
+.bug {
+  color: white !important;
+  background-color: #92A312 !important;
+  text-shadow: 1px 1px 1px black;
+  width: 8vw;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin-right: 1rem;
+  margin-bottom: 1vh;
+}
+
+.theme-bug {
+  border-radius: 10% !important;
+  box-shadow: 0 0 18px #92A312;
+  transition: background-color 0.3s ease-in;
+}
+
+.theme-bug:hover {
+  cursor: pointer;
+  background-color: #92A312;
+}
+
+.electric {
+  color: white !important;
+  background-color: #F9C000 !important;
+  text-shadow: 1px 1px 1px black;
+  width: 8vw;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin-right: 1rem;
+  margin-bottom: 1vh;
+}
+
+.theme-electric {
+  border-radius: 10% !important;
+  box-shadow: 0 0 18px #F9C000;
+  transition: background-color 0.3s ease-in;
+}
+
+.theme-electric:hover {
+  cursor: pointer;
+  background-color: #F9C000;
+}
+
+.grass {
+  color: white !important;
+  background-color: #3DA324 !important;
+  text-shadow: 1px 1px 1px black;
+  width: 8vw;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin-right: 1rem;
+  margin-bottom: 1vh;
+}
+
+.theme-grass {
+  border-radius: 10% !important;
+  box-shadow: 0 0 18px #3DA324;
+  transition: background-color 0.3s ease-in;
+}
+
+.theme-grass:hover {
+  cursor: pointer;
+  background-color: #3DA324;
+}
+
+.psychic {
+  color: white !important;
+  background-color: #F03F7A !important;
+  text-shadow: 1px 1px 1px black;
+  width: 8vw;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin-right: 1rem;
+  margin-bottom: 1vh;
+}
+
+.theme-psychic {
+  border-radius: 10% !important;
+  box-shadow: 0 0 18px #F03F7A;
+  transition: background-color 0.3s ease-in;
+}
+
+.theme-psychic:hover {
+  cursor: pointer;
+  background-color: #F03F7A;
+}
+
+.ground {
+  color: white !important;
+  background-color: #92501B !important;
+  text-shadow: 1px 1px 1px black;
+  width: 8vw;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin-right: 1rem;
+  margin-bottom: 1vh;
+}
+
+.theme-ground {
+  border-radius: 10% !important;
+  box-shadow: 0 0 18px #92501B;
+  transition: background-color 0.3s ease-in;
+}
+
+.theme-ground:hover {
+  cursor: pointer;
+  background-color: #92501B;
+}
+
+.dark {
+  color: white !important;
+  background-color: #4F3F3C !important;
+  text-shadow: 1px 1px 1px black;
+  width: 8vw;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin-right: 1rem;
+  margin-bottom: 1vh;
+}
+
+.theme-dark {
+  border-radius: 10% !important;
+  box-shadow: 0 0 18px #4F3F3C;
+  transition: background-color 0.3s ease-in;
+}
+
+.theme-dark:hover {
+  cursor: pointer;
+  background-color: #4F3F3C;
+}
+
+.fighting {
+  color: white !important;
+  background-color: #FF8100 !important;
+  text-shadow: 1px 1px 1px black;
+  width: 8vw;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin-right: 1rem;
+  margin-bottom: 1vh;
+}
+
+.theme-fighting {
+  border-radius: 10% !important;
+  box-shadow: 0 0 18px #FF8100;
+  transition: background-color 0.3s ease-in;
+}
+
+.theme-fighting:hover {
+  cursor: pointer;
+  background-color: #FF8100;
+}
+
+.water {
+  color: white !important;
+  background-color: #2481F0 !important;
+  text-shadow: 1px 1px 1px black;
+  width: 8vw;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin-right: 1rem;
+  margin-bottom: 1vh;
+}
+
+.theme-water {
+  border-radius: 10% !important;
+  box-shadow: 0 0 18px #2481F0;
+  transition: background-color 0.3s ease-in;
+}
+
+.theme-water:hover {
+  cursor: pointer;
+  background-color: #2481F0;
+}
+
+.fairy {
+  color: white !important;
+  background-color: #F071F0 !important;
+  text-shadow: 1px 1px 1px black;
+  width: 8vw;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin-right: 1rem;
+  margin-bottom: 1vh;
+}
+
+.theme-fairy {
+  border-radius: 10% !important;
+  box-shadow: 0 0 18px #F071F0;
+  transition: background-color 0.3s ease-in;
+}
+
+.theme-fairy:hover {
+  cursor: pointer;
+  background-color: #F071F0;
+}
+
+.ice {
+  color: white !important;
+  background-color: #3CD9FF !important;
+  text-shadow: 1px 1px 1px black;
+  width: 8vw;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin-right: 1rem;
+  margin-bottom: 1vh;
+}
+
+.theme-ice {
+  border-radius: 10% !important;
+  box-shadow: 0 0 18px #3CD9FF;
+  transition: background-color 0.3s ease-in;
+}
+
+.theme-ice:hover {
+  cursor: pointer;
+  background-color: #3CD9FF;
+}
+
+.normal {
+  color: white !important;
+  background-color: #9FA19F !important;
+  text-shadow: 1px 1px 1px black;
+  width: 8vw;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin-right: 1rem;
+  margin-bottom: 1vh;
+}
+
+.theme-normal {
+  border-radius: 10% !important;
+  box-shadow: 0 0 18px #9FA19F;
+  transition: background-color 0.3s ease-in;
+}
+
+.theme-normal:hover {
+  cursor: pointer;
+  background-color: #9FA19F;
+}
+
+.poison {
+  color: white !important;
+  background-color: #923FCC !important;
+  text-shadow: 1px 1px 1px black;
+  width: 8vw;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin-right: 1rem;
+  margin-bottom: 1vh;
+}
+
+.theme-poison {
+  border-radius: 10% !important;
+  box-shadow: 0 0 18px #923FCC;
+  transition: background-color 0.3s ease-in;
+}
+
+.theme-poison:hover {
+  cursor: pointer;
+  background-color: #923FCC;
+}
+
+.rock {
+  color: white !important;
+  background-color: #B1AB82 !important;
+  text-shadow: 1px 1px 1px black;
+  width: 8vw;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin-right: 1rem;
+  margin-bottom: 1vh;
+}
+
+.theme-rock {
+  border-radius: 10% !important;
+  box-shadow: 0 0 18px #B1AB82;
+  transition: background-color 0.3s ease-in;
+}
+
+.theme-rock:hover {
+  cursor: pointer;
+  background-color: #B1AB82;
+}
+
+.ghost {
+  color: white !important;
+  background-color: #713F71 !important;
+  text-shadow: 1px 1px 1px black;
+  width: 8vw;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin-right: 1rem;
+  margin-bottom: 1vh;
+}
+
+.theme-ghost {
+  border-radius: 10% !important;
+  box-shadow: 0 0 18px #713F71;
+  transition: background-color 0.3s ease-in;
+}
+
+.theme-ghost:hover {
+  cursor: pointer;
+  background-color: #713F71;
+}
+
+.flying {
+  color: white !important;
+  background-color: #82BAF0 !important;
+  text-shadow: 1px 1px 1px black;
+  width: 8vw;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin-right: 1rem;
+  margin-bottom: 1vh;
+}
+
+.theme-flying {
+  border-radius: 10% !important;
+  box-shadow: 0 0 18px #82BAF0;
+  transition: background-color 0.3s ease-in;
+}
+
+.theme-flying:hover {
+  cursor: pointer;
+  background-color: #82BAF0;
+}
+
+.unknown {
+  color: white !important;
+  background-color: #549985 !important;
+  text-shadow: 1px 1px 1px black;
+  width: 8vw;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin-right: 1rem;
+  margin-bottom: 1vh;
+}
+
+.theme-unknown {
+  border-radius: 10% !important;
+  box-shadow: 0 0 18px #549985;
+  transition: background-color 0.3s ease-in;
+}
+
+.theme-unknown:hover {
+  cursor: pointer;
+  background-color: #549985;
+}
+
+.shadow {
+  color: white !important;
+  background-color: #3F3F69 !important;
+  text-shadow: 1px 1px 1px black;
+  width: 8vw;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin-right: 1rem;
+  margin-bottom: 1vh;
+}
+
+.theme-shadow {
+  border-radius: 10% !important;
+  box-shadow: 0 0 18px #3F3F69;
+  transition: background-color 0.3s ease-in;
+}
+
+.theme-shadow:hover {
+  cursor: pointer;
+  background-color: #3F3F69;
+}
+
+.listing_pokemon {
+  width: 70vw;
+  justify-content: flex-end;
+  margin: 0 auto;
+}
+
+.title {
+  margin: 0 auto;
+}
+
+.affects {
+  width: 40%;
+}
+
+.triggers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 2vh;
+}
+
+.display_pokemon {
+  display: flex;
+  flex-direction: column;
+  max-height: 80vh;
+  overflow: scroll;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin: 0 auto;
+}
+
+.impossible {
+  cursor: pointer;
+}
+
+.sidebar {
+  position: fixed;
+  left: 1vw;
+}/*# sourceMappingURL=App.css.map */
