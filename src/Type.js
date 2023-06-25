@@ -35,7 +35,7 @@ export default function Type() {
     return (
         <div className='container'>
             <h2 className={name + " title"}>{name}</h2>
-            <div className='triggers border rounded'>
+            <div className='triggers border rounded mt-3'>
                 <ul className='list-group affects mt-4'><h5>Is Weak Against :</h5>
                     {resumeDblFrom}
                 </ul>
