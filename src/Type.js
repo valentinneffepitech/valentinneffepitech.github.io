@@ -31,7 +31,7 @@ export default function Type() {
     const resumeNoFrom = noDmgFrom.map((dmg) => (<li className={"list-group-item " + dmg.name}><Link className="nav-link" to={'/type/' + dmg.name}>{dmg.name}</Link></li>));
     const resumeNoTo = noDmgTo.map((dmg) => (<li className={"list-group-item " + dmg.name}><Link className="nav-link" to={'/type/' + dmg.name}>{dmg.name}</Link></li>));
     const resumemoves = moves.map((atk) => (<div className={'element'}><Link className="nav-link" to={`/move/${atk.name}`}>{atk.name}</Link></div>))
-    const resumepokemon = pokemon.map((poke) => (<div className={poke.pokemon.name + ' element'}><Link className="nav-link" to={`/pokemon/${poke.pokemon.name}`}>{poke.pokemon.name}</Link></div>));
+    const resumepokemon = pokemon.map((poke) => (<div className={poke.pokemon.name + ' element'}><Link className="nav-link" to={`/pokemon/${poke.pokemon.name}`}>{poke.pokemon.name.charAt(0).toUpperCase() + poke.pokemon.name.slice(1)}</Link></div>));
     return (
         <div className='container'>
             <h2 className={name + " title"}>{name}</h2>
