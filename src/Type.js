@@ -36,30 +36,30 @@ export default function Type() {
         <div className='container'>
             <h2 className={name + " title"}>{name}</h2>
             <div className='triggers border rounded mt-3'>
-                <ul className='list-group affects mt-4'><h5>Is Weak Against :</h5>
+                <ul className='list-group d-flex flex-column align-items-center affects mt-4'><h5>Is Weak Against :</h5>
                     {resumeDblFrom}
                 </ul>
 
-                <ul className='list-group affects mt-4'><h5>Is Strong Against :</h5>
+                <ul className='list-group d-flex flex-column align-items-center affects mt-4'><h5>Is Strong Against :</h5>
                     {resumeDblTo}
                 </ul>
 
-                <ul className='list-group affects mt-4'><h5>Is Effective Against :</h5>
+                <ul className='list-group d-flex flex-column align-items-center affects mt-4'><h5>Is Effective Against :</h5>
                     {resumeHalfFrom}
                 </ul>
 
 
-                <ul className='list-group affects mt-4'><h5>Is Not Effective Against :</h5>
+                <ul className='list-group d-flex flex-column align-items-center affects mt-4'><h5>Is Not Effective Against :</h5>
                     {resumeHalfTo}
                 </ul>
 
 
-                <ul className='list-group affects mt-4'><h5>Is Immune Against :</h5>
+                <ul className='list-group d-flex flex-column align-items-center affects mt-4'><h5>Is Immune Against :</h5>
                     {resumeNoFrom}
                 </ul>
 
 
-                <ul className='list-group affects mt-4'><h5>Has no Effect Against :</h5>
+                <ul className='list-group d-flex flex-column align-items-center affects mt-4'><h5>Has no Effect Against :</h5>
                     {resumeNoTo}
                 </ul>
             </div>
