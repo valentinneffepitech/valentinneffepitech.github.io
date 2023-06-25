@@ -63,16 +63,18 @@ export default function Type() {
                     {resumeNoTo}
                 </ul>
             </div>
-            <div>
-                <h5>Moves :</h5>
-                <div className="display_pokemon">
-                    {resumemoves}
+            <div className='d-flex justify-content-evenly border rounded mb-3 p-3'>
+                <div className='mt-4 col-5'>
+                    <h5>Moves :</h5>
+                    <div className="display_pokemon">
+                        {resumemoves}
+                    </div>
                 </div>
-            </div>
-            <div>
-                <h5>Pokemons :</h5>
-                <div className="display_pokemon">
-                    {resumepokemon}
+                <div className='mt-4 col-5'>
+                    <h5>Pokemons :</h5>
+                    <div className="display_pokemon">
+                        {resumepokemon}
+                    </div>
                 </div>
             </div>
         </div>

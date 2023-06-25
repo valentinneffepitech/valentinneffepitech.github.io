@@ -40,10 +40,10 @@ export default function Homepage() {
             </div>
             <div id="controls">
                 <button id="prev" className="btn btn-secondary" onClick={() => {
-                    setPage(parseInt(page) - 50);
+                    setPage(parseInt(page) - 150);
                 }}>Previous</button>
                 <button id="nxt" className="btn btn-secondary" onClick={() => {
-                    setPage(parseInt(page) + 50);
+                    setPage(parseInt(page) + 150);
                 }}>Next</button>
             </div>
         </div>
