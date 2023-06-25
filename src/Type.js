@@ -44,15 +44,13 @@ export default function Type() {
                     {resumeDblTo}
                 </ul>
 
-                <ul className='list-group d-flex flex-column align-items-center affects mt-4'><h5>Is Effective Against :</h5>
-                    {resumeHalfFrom}
-                </ul>
-
-
                 <ul className='list-group d-flex flex-column align-items-center affects mt-4'><h5>Is Not Effective Against :</h5>
                     {resumeHalfTo}
                 </ul>
 
+                <ul className='list-group d-flex flex-column align-items-center affects mt-4'><h5>Is Effective Against :</h5>
+                    {resumeHalfFrom}
+                </ul>
 
                 <ul className='list-group d-flex flex-column align-items-center affects mt-4'><h5>Is Immune Against :</h5>
                     {resumeNoFrom}
