@@ -24,7 +24,7 @@ export default function Profil() {
     <div id="Profil_Div">
       <div className="container-fluid d-flex" id="Profil_page">
         <a id="lien_cv" href="./CV_NEFF_VALENTIN.pdf" download title="Cliquez pour télécharger mon CV!">
-          <img src="./carapuce.png" id="profil_picture" alt="profil" />
+          <img src="./mario.png" id="profil_picture" alt="profil" />
         </a>
         <div id="profil_content">
           <h1 id="profil_title">Qui suis-je?</h1>
