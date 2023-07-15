@@ -24,7 +24,7 @@ export default function Profil() {
     <div id="Profil_Div">
       <div className="container-fluid d-flex" id="Profil_page">
         <a id="lien_cv" href="./CV_NEFF_VALENTIN.pdf" download title="Cliquez pour télécharger mon CV!">
-          <img src="./echec.jpg" id="profil_picture" alt="profil" />
+          <img src="./pp.jpg" id="profil_picture" alt="profil" />
         </a>
         <div id="profil_content">
           <h1 id="profil_title">Qui suis-je?</h1>
@@ -52,9 +52,10 @@ export default function Profil() {
           </div>
           <div id="contact">
             <h3 id="contact_title">Comment me contacter?</h3>
-            <div className="info">Mail: <u><a href="mailto:neffvalentin67@gmail.com">neffvalentin67@gmail.com</a></u></div>
-            <div className="info">Téléphone: 06.24.95.04.94</div>
+            <div className="info">Par Mail: <u><a href="mailto:neffvalentin67@gmail.com">neffvalentin67@gmail.com</a></u></div>
+            <div className="info">Par Téléphone: 06.24.95.04.94</div>
             <form ref={form} onSubmit={sendEmail}>
+              <h4 style={{ marginTop: 3 + 'vh' }}>Pour un éventuelle coopération :</h4>
               <input id="input_name" className="input form-control" type="text" placeholder="Votre Nom" name="name" required />
               <input id="input_email" className="input form-control" type="email" placeholder="Votre Email" name="email" required />
               <textarea id="input_message" className="input form-control" rows={8} cols={50} placeholder="Votre message..." name="message" required></textarea>

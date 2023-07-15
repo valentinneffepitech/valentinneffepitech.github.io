@@ -8,7 +8,7 @@ export default function Navbar() {
             <ul>
                 <li><Link className="navlink" to='/'>Home</Link></li>
                 <li><Link className="navlink" to='/profil'>A propos de moi</Link></li>
-                <li><Link className="navlink" to='/projects'>Projets</Link></li>
+                <li><Link className="navlink" to='/projects'>Quelques réalisations</Link></li>
             </ul>
         </nav>
     )

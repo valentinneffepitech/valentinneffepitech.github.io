@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export default function Accueil() {
     return (
         <div id="Accueil">
-            <img id="profilpic" src="echec.jpg" alt="profil" />
+            <img id="profilpic" src="./pp.jpg" alt="profil" />
             <div id="Accueil_cards">
                 <div className='card_container'>
                     <div className="card_item">

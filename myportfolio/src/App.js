@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { Routes, Route } from "react-router-dom";
 import Accueil from './Accueil';
@@ -22,7 +21,6 @@ function App() {
           <cite>Développeur Full-stack</cite>
         </div>
         <div className="header_display">
-          <img src={logo} className="App-logo" alt="logo" />
           <h3>Valentin Neff</h3>
         </div>
       </header>

@@ -93,6 +93,7 @@ header{
   padding-top:1vh;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   min-height: 75.1vh;
 }
 
@@ -106,8 +107,7 @@ header{
   height: 70vh;
   border-right: 1px solid #ccc;
   float:left;
-  margin-right: 5vw;
-  margin-top: 5vh;
+  margin: 2vh 2vw;
   padding: 0 1vw;
 }
 
@@ -455,8 +455,9 @@ h1{
 #profil_picture{
   padding: 3vh 0;
   max-height: 70vh;
-  width: 35vw;
+  width: 30vw;
   position: sticky;
+  aspect-ratio: 3/4;
   top: 20vh;
 }
 
@@ -634,6 +635,12 @@ h1{
  .categorie:hover{
     flex-grow: 0.2;
  }
+ .card_item_php:nth-child(2n+2){
+  flex-direction: column;
+ }
+ .card_item_php:nth-child(2n+1){
+  flex-direction: column-reverse;
+ }
 }
 
 @media screen and (max-width:768px){
@@ -672,6 +679,9 @@ h1{
     margin: 1vh 5vw;
     min-height: 30vh;
   }
+  .description{
+    width:70vw;
+  }
 }
 
 @media screen and (max-width:576px){
@@ -692,9 +702,7 @@ h1{
   }
 
   #profilpic{
-    width:100vw;
-    aspect-ratio: 1/1;
-    margin: 1vh auto;
+    display: none;
   }
 
   .card_item{
