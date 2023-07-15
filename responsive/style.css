@@ -122,6 +122,10 @@ nav{
 	margin-left:55%;
 }
 
+#next, #forward{
+	cursor: pointer;
+}
+
 .categories__titre{
 	display: flex;
 	justify-content : space-between;
