@@ -450,6 +450,10 @@ textarea{
   width: 100%;
 }
 
+.language_card:nth-child(1){
+  background-color: #F7E018;
+}
+
 .language_card:nth-child(2){
   background-color: #000;
 }
@@ -464,4 +468,40 @@ textarea{
 
 #projectDisplayer svg{
   margin: 1rem;
+}
+
+@media screen and ( max-width:43rem) {
+  #acceptButton{
+    font-size: 3em;
+  }
+
+  #profileSection{
+    flex-direction: column;
+  }
+
+  #profileDescription{
+    width: 90%;
+  }
+
+  .modal{
+    width: 100%;
+    right: -78%;
+  }
+
+  #socials{
+    width: 100%;
+  }
+
+  #projectShown{
+    flex-direction: column;
+  }
+
+  #projectShown div{
+    width: 90%;
+  }
+
+  #projectShown img{
+    max-width: 90vw;
+    width: 80%;
+  }
 }
