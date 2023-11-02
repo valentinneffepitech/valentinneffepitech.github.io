@@ -229,7 +229,7 @@ header h4{
 #ProjectList > div{
   grid-area: liste;
   padding: 2rem;
-  background-color: var(--green);
+  background-color: var(--black);
 }
 
 #mailBox{
@@ -490,7 +490,11 @@ footer{
 
   #profileSection > img{
     width: 80%;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  #mailer_body label{
+    font-size: 1.2em;
   }
 
   main{
@@ -499,6 +503,10 @@ footer{
   #notAccepted{
     padding:0;
     width: 100%;
+  }
+
+  ul li{
+    margin-bottom: 1rem;
   }
 
   #notAccepted button{
@@ -511,7 +519,33 @@ footer{
   }
 
   #profileDescription{
+    width:100%;
+  }
+  #profileDescription p{
     width: 90%;
+    margin: 0 auto;
+  }
+  h3{
+    text-align: center;
+    width: 80%;
+    margin: 1rem auto;
+  }
+
+  #profileDescription ul{
+    padding: 1rem;
+  }
+
+  #searchList{
+    padding: 1rem .5rem;
+    background: var(--orange);
+  }
+
+  #searchList span{
+    color: var(--black) !important;
+  }
+
+  #searchList li{
+    color: #f6f6f6;
   }
 
   .modal{
@@ -534,5 +568,34 @@ footer{
   #projectShown img{
     max-width: 90vw;
     width: 80%;
+  }
+
+  #ProjectList{
+    top: 25%
+  }
+
+  #mailBox{
+    top: 40%;
+  }
+
+  header h4{
+    display: none;
+  }
+
+  header:hover h3{
+    display: none !important;
+  }
+
+  header h1{
+    font-size: 2.5em;
+  }
+
+  header:hover h1{
+    font-size: 2.5em;
+  }
+
+  .social_link{
+    display: none;
+    padding: 0 !important;
   }
 }

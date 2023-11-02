@@ -6,8 +6,9 @@ const ProfileSection = () => {
                 <h3>
                     AVIS DE RECHERCHE - DÉVELOPPEUR FULL-STACK INTRÉPIDE
                 </h3>
-
-                Vous êtes-vous déjà demandé qui était ce mystérieux cowboy des codes, capable de dompter les serveurs comme s&apos;il s&apos;agissait de mustangs sauvages ? Eh bien, ne cherchez plus !
+                <p>
+                    Vous êtes-vous déjà demandé qui était ce mystérieux cowboy des codes, capable de dompter les serveurs comme s&apos;il s&apos;agissait de mustangs sauvages ? Eh bien, ne cherchez plus !
+                </p>
                 <ul>
                     <li>
                         <span>Nom</span> : &quot;Valentin Neff&quot; (alias &quot;Le Maître du Code&quot;)
@@ -22,8 +23,8 @@ const ProfileSection = () => {
 
                 <ul id="searchList">
                     <span>
-                        Recherché pour
-                    </span> :
+                        Recherché pour :
+                    </span> 
 
                     <li>Vol d&apos;heures de sommeil - Ce criminel est connu pour travailler sans relâche, programmant jusqu&apos;au petit matin et laissant derrière lui une traînée de tasses de café vides.</li>
 
@@ -48,7 +49,7 @@ const ProfileSection = () => {
                         Prime
                     </span> :
                     <li>
-                        La prime pour sa capture vivante est une année de support technique 24/7 et un accès illimité à ses compétences de développement. <br/>Bonne chance, partenaire.
+                        La prime pour sa capture vivante est une année de support technique 24/7 et un accès illimité à ses compétences de développement. <br />Bonne chance, partenaire.
                     </li>
                 </ul>
 
