@@ -364,8 +364,9 @@ textarea{
 #searchList li{
   padding-left: 1rem;
   margin: 1rem 0;
-  color: var(--green);
-  list-style-type: square !important;
+  color: var(--grey);
+  list-style-type: none;
+  padding-left: 0;
 }
 
 #projectDisplayer{
@@ -470,9 +471,39 @@ textarea{
   margin: 1rem;
 }
 
+footer{
+  background-color: #242424;
+}
+
 @media screen and ( max-width:43rem) {
   #acceptButton{
-    font-size: 3em;
+    font-size: 2em !important;
+    padding: 0;
+    overflow-wrap: break-word;
+    width: 70%;
+  }
+
+  #root{
+    width: 100%;
+    background: #252525;
+  }
+
+  #profileSection > img{
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+
+  main{
+    overflow-x: hidden;
+  }
+  #notAccepted{
+    padding:0;
+    width: 100%;
+  }
+
+  #notAccepted button{
+    width: 100%;
+    overflow-wrap: break-word;
   }
 
   #profileSection{
