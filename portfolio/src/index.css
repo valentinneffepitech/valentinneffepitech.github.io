@@ -58,6 +58,7 @@ button {
   font-weight: 500;
   background-color: var(--black);
   cursor: pointer;
+  color: var(--grey);
 }
 
 button:focus,
@@ -265,6 +266,7 @@ header h4{
 #form_contact button:hover{
   background-color: var(--grey);
   color: var(--black);
+  border-color: var(--blue);
 }
 
 #projectIcon{
