@@ -1,5 +1,5 @@
 import React from 'react'
-import ProfileSection from '../../profileSection/profileSection'
+import ProfileSection from '../profileSection/profileSection'
 
 const Main = () => {
     return (

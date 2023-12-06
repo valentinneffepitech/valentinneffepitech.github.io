@@ -17,11 +17,11 @@ export default function MainFooter() {
                     </a>
                 </div>
                 <div className='social'>
-                    <a title='Mon CV' href="/public/CV_NEFF_VALENTIN.pdf" rel="noreferrer" target='_blank' download={"CV Valentin Neff"}>
+                    <a title='Mon CV' href="/CV_NEFF_VALENTIN.pdf" rel="noreferrer" target='_blank' download={"CV Valentin Neff"}>
                         <FontAwesomeIcon icon={faFilePdf} size="3x" color="red" />
                     </a>
                 </div>
             </div>
-        </footer >
+        </footer>
     )
 }
