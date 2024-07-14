@@ -26,8 +26,10 @@ export const MobileToggleTechno = ({ technos }) => {
                             </div>
                             <div className="mobileToggleTechno__tab__content">
                                 <ul className="techno_list">
-                                    {techno.description.map((element,index) => (
-                                        <li key={index}>{element}</li>
+                                    {techno.description.map((element, index) => (
+                                        <li key={index}>
+                                            <img src={`/technos/${element}.png`} alt={element}/>
+                                        </li>
                                     ))}
                                 </ul>
                             </div>

@@ -450,15 +450,29 @@ h2 {
 
 .techno_list {
     display: flex;
-    justify-content: space-round;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
     margin: 1rem 0;
+    background-color: #fff;
+    padding: 1rem;
 }
 
 .techno_list li {
     width: fit-content;
     text-align: center;
+    display: flex;
+    align-items: center;
+    width: 25%;
+}
+
+.techno_list li img{
+    width: 100%;
+    object-fit: contain;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #technos>img {
@@ -681,7 +695,7 @@ body.dark #projects * {
         width: 100%;
     }
 
-    #project_details h3{
+    #project_details h3 {
         grid-area: title;
         display: flex;
         align-items: center;
@@ -689,11 +703,11 @@ body.dark #projects * {
         font-size: 2rem;
     }
 
-    #project_details_img{
+    #project_details_img {
         grid-area: image;
     }
 
-    #project_details_body{
+    #project_details_body {
         grid-area: technos;
         max-height: 500px;
         display: flex;
@@ -701,14 +715,14 @@ body.dark #projects * {
         justify-content: center;
     }
 
-    #project_details_body #project_details_technologies{
+    #project_details_body #project_details_technologies {
         display: flex;
         flex-wrap: wrap;
         gap: 2rem;
-        background-color: rgba(255,255,255,0);
+        background-color: rgba(255, 255, 255, 0);
     }
 
-    #project_details_body #project_details_technologies li{
+    #project_details_body #project_details_technologies li {
         width: 50%;
         display: flex;
         justify-content: center;
@@ -805,7 +819,7 @@ textarea {
     transform: scale(.95);
 }
 
-.disabled{
+.disabled {
     opacity: .5;
     pointer-events: none;
 }
@@ -835,8 +849,8 @@ textarea {
     }
 }
 
-@media screen and (min-width: 1200px){
-    #contact form{
+@media screen and (min-width: 1200px) {
+    #contact form {
         width: 70%;
     }
 
@@ -844,7 +858,8 @@ textarea {
         width: 49%;
     }
 
-    #contact_finders .form-group input, textarea{
+    #contact_finders .form-group input,
+    textarea {
         padding: 1rem;
     }
 }

@@ -97,11 +97,10 @@ export const Technos = () => {
             "description": [
                 "HTML",
                 "CSS",
-                "JavaScript",
-                "PHP",
+                "Javascript",
+                "Php",
                 "Python",
                 "Java",
-                "Ruby",
             ]
         },
         {
@@ -110,21 +109,19 @@ export const Technos = () => {
             "description": [
                 "Symfony",
                 "Laravel",
-                "Django",
-                "Spring Boot",
-                "Rails",
                 "React",
                 "NodeJS",
-                "Marko",
+                "Django",
+                "Spring",
             ],
         },
         {
             "id": 3,
             "title": "Base de données",
             "description": [
-                "MySQL",
-                "PostgreSQL",
-                "MongoDB",
+                "SQL",
+                "Postgresql",
+                "Mongo",
                 "SQLite"
             ],
         },
@@ -139,14 +136,15 @@ export const Technos = () => {
             "id": 5,
             "title": "CMS",
             "description": [
-                "Wordpress/Woocommerce",
+                "Wordpress",
+                "Woocommerce"
             ],
         },
         {
             "id": 6,
             "title": "Web Sockets",
             "description": [
-                "Socket.io",
+                "Websocket",
             ],
         }
     ]
