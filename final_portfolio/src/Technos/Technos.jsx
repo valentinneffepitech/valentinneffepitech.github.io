@@ -152,7 +152,7 @@ export const Technos = () => {
     return (
         <section id="technos">
             <h2>
-                Technologies diverses
+                languages et technologies
             </h2>
             <img src={dev} alt="Technique" />
             {
