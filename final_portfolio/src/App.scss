@@ -368,7 +368,7 @@ h2 {
     width: 120px;
     aspect-ratio: 1/1;
     bottom: 5%;
-    left: calc(50% - 75px);
+    left: calc(50% - 60px);
     transform-style: preserve-3d;
     transform: perspective(1000px) rotateX(-20deg) rotateY(calc(360*(var(--rotation)/var(--quantity)) * 1deg));
     transition: all .4s ease-in-out;
