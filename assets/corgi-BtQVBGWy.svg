@@ -1,0 +1,105 @@
+<svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        #bubbles circle {
+            animation: up 2s ease-out infinite;
+        }
+
+        #bubbles circle:nth-of-type(4n+1) {
+            animation-delay: .5s;
+        }
+
+
+        #bubbles circle:nth-of-type(4n+2) {
+            animation-delay: .8s;
+        }
+
+        #bubbles circle:nth-of-type(4n+3) {
+            animation-delay: 1.2s;
+        }
+
+        .eye {
+            animation: triggerEyes 2s infinite;
+        }
+
+        @keyframes triggerEyes {
+            0% {
+                transform: translateY(0);
+            }
+
+            25% {
+                transform: translateX(-1%);
+            }
+
+            50% {
+                transform: translateY(-2%);
+            }
+
+            75% {
+                transform: translateX(1%);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes up {
+            from {
+                opacity: 0;
+                transform: translateY(0);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(-20px);
+            }
+        }
+    </style>
+    <g id="corgi">
+        <path d="M60 85 c 0 0, 5 -40 ,20 -40 c 0 0, 60 -20, 60 40" fill="#cc5404" stroke="#1d1d1d" />
+        <path d="M60 85 c 0 0, 10 -20, 20 0 Z" fill="#e2e2e2" stroke="#1d1d1d" />
+        <path d="M120 85 c 0 0, 10 -20, 20 0 Z" fill="#e2e2e2" stroke="#1d1d1d" />
+        <path d="M61 84 c 0 0, 10 -10, 20 0 Z" fill="white" stroke="" />
+        <path d="M119 85 c 0 0, 10 -10, 20 0 Z" fill="white" stroke="" />
+    </g>
+    <g id="corgi_head">
+        <path d="M80 40 c 0 0, 0 -10, -10 0 c 0 0, -5 5 , -10 0 c 0 0, 0 -5, 10 -20 c 0 0, 5 -10, 20 0" stroke="white" stroke-width=".5"/>
+        <path d="M125 40 c 0 0,0 10, 0 -10 c 0 0, 10 0, 10 10 c 0 0, 5 10,10 0 c 0 0, 10 -10, 0 -20 c 0 0, -10 -10, -30 0" stroke="white" stroke-width=".5"/>
+        <path d="M80 40 c 0 0, 0 -30 , 22.5 -30 c 0 0, 20 0 , 24 30" fill="#804400" stroke="#1d1d1d" />
+        <path d="M80 40 c 0 0, 10 -40, 20 0 Z" fill="white" stroke="#1d1d1d" />
+        <path d="M105 40 c 0 0, 10 -40, 20 0 Z" fill="white" stroke="#1d1d1d" />
+        <g class="eye">
+            <ellipse rx="5" ry="8" cx="115" cy="38" fill="skyblue" />
+            <ellipse rx="2" ry="5" cx="115" cy="38" fill="black" />
+            <circle cx="116" cy="36" r="1" fill="white" />
+        </g>
+        <g class="eye">
+            <ellipse rx="5" ry="8" cx="90" cy="38" fill="skyblue" />
+            <ellipse rx="2" ry="5" cx="90" cy="38" fill="black" />
+            <circle cx="91" cy="36" r="1" fill="white" />
+        </g>
+        <path d="M80 40 c 0 0 , -20 30, 0 30 h 40 c 0 0, 20 -30, 0 -30 Z" fill="#c0703a" stroke="#1d1d1d" />
+        <ellipse cx="102" cy="43" rx="10" ry="5" fill="black" />
+    </g>
+    <g id="bottle">
+        <path d="M40 55 v 30 c 0 0, 0 5, 5 5 h 5 c 0 0, 5 0, 5 -5 v -30 c 0 0, 0 -5, -5 -5 h -5 c 0 0, -5 0, -5 5"
+            fill="#9a9af3" stroke="#00004d" />
+        <path d="M40 65 v 20 c 0 0, 0 5, 5 5 h 5 c 0 0, 5 0, 5 -5 v -20 h -15" fill="#75b7f5" stroke="#00004d" />
+        <path d="M41 50 v -5 h 12.5 v 5" fill="#00004d" />
+        <path d="M55 60 c 0 0, 0 20 ,-15 30 c 0 0, 0 5, 5 5 h 5 c 0 0, 5 0, 5 -5 v -20" fill="#4324b3" />
+        <g id="bubbles">
+            <circle cx="43" cy="85" r=".5" stroke="#d8d8ff" />
+            <circle cx="46" cy="85" r=".5" stroke="#d8d8ff" />
+            <circle cx="49" cy="85" r=".5" stroke="#d8d8ff" />
+            <circle cx="52" cy="85" r=".5" stroke="#d8d8ff" />
+        </g>
+    </g>
+    <g id="computer">
+        <path d="M70 85 h 70 c 0 0, 0 5 ,-5 5 h-70 c 0 0, -5 0 , -5 -5" stroke="#1d1d1d" fill="#e2e2e2" />
+        <path d="M130 90 l20 -40 h-100 l20 40" stroke="#1d1d1d" fill="#f6f6f6" />
+        <ellipse cx="100" cy="70" rx="4" ry="3" />
+        <path d="M140 50 c 0 0, 0 20 ,-75 40 h65 l 15 -35 c 0 0, -5 -10 , -10 0" fill="grey" />
+        <path d="M40 90 h120 c 0 0, 10 5 ,0 10 h-120 c 0 0, -10 -5 , 0 -10" stroke="#1d1d1d" fill="#ff9e2f" />
+    </g>
+    <!-- M:X-debut Y-debut H:X-trait V:Y-trait L:X-diagonale Y-Diagonale Z:fermer -->
+</svg>
