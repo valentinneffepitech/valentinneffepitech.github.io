@@ -1,1 +1,0 @@
-version tablette et desktop

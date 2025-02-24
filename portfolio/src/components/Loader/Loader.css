@@ -1,0 +1,53 @@
+.loader{
+    width: 20%;
+    margin: 1rem 40%;
+    aspect-ratio: 1/1;
+}
+
+.loader_inside, .loader_middle, .loader_outside{
+    border-radius: 50%;
+    border: 5px solid transparent;
+    width: 100%;
+    aspect-ratio: 1/1;
+    animation-name: loaderRotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    padding: 10%;
+}
+
+.loader_outside{
+    border-color: #1d1d1d;
+    border-top-color: transparent;
+    animation-duration:3s;
+    animation-duration: reverse;
+}
+
+.loader_inside{
+    border-color: #ccc;
+    border-left-color: transparent;
+    animation-duration: 5s;
+}
+
+.loader_middle{
+    border-color: #4e4e4e;
+    border-bottom-color: transparent;
+    animation-duration: 1s;
+    animation-direction: reverse;
+}
+
+@media screen and (min-width:1024px) {
+    .loader{
+        width: 10%;
+        margin-left: 45%;
+    }
+}
+
+@keyframes loaderRotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

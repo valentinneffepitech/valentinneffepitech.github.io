@@ -1,0 +1,45 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<style>
+    #smoke path{
+        animation: slideUpAndFade 1s infinite;
+    }
+
+    #smoke path:first-of-type{
+        animation-delay: .7s;
+    }
+
+    #smoke path:nth-of-type(2){
+        animation-delay: .5s ;
+    }
+
+    @keyframes slideUpAndFade{
+        0% {
+            transform: translateY(10%);
+            opacity: 0;
+        } 50% {
+            transform: translateY(-10%);
+            opacity: 1;
+        } 100% {
+            transform: translateY(-15%);
+            opacity: 0;
+        }
+    }
+</style>
+    <!-- M:X-debut Y-debut H:X-trait V:Y-trait L:X-diagonale Y-Diagonale Z:fermer -->
+    <path d="M30 29 c 0 0, 20 -10 ,40 0 v10 c 0 0, -20 10, -40 0 Z" fill="white" stroke="#1d1d1d"/>
+    <ellipse cx="50" cy="33" rx="16" ry="5" fill="#6F4E37" stroke="#1d1d1d"/>
+    <circle cx="65" cy="50" r="15" fill="#e2e2e2" stroke="#000"/>
+    <circle cx="65" cy="50" r="10" fill="#fff" stroke="#000"/>
+    <path d="M30 80 C 30 80, 50 90, 70 80 v-50 C 70 30, 50 40, 30 30 Z" fill="white" stroke="black"/>
+    <g id="smoke">
+        <path d="M40 30 c 0 0, 5 -5 ,0 -10 c 0 0, -5 -5 ,0 -10" fill="grey"/>
+        <path d="M60 30 c 0 0, 5 -5 ,0 -10 c 0 0, -5 -5 ,0 -10" fill="grey"/>
+        <path d="M50 30 c 0 0, 5 -5 ,0 -10 c 0 0, -5 -5 ,0 -10" fill="grey"/>
+    </g>
+    <g id="logo">
+        <path d="M35 45 c 0 0, 15 5 , 30 0 v 30 c 0 0, -15 5, -30  0 Z" />
+        <path d="M37 60 l7.5 -7.5 c 0 0, 2 2 , 0 3 l-5 5 l5 5 c 0 0, 2 2, 0 3 l-7.5 -7.5" fill="skyblue" />
+        <path d="M63 60 l-7.5 -7.5 c 0 0, -2 2 , 0 3 l5 5 l-5 5 c 0 0, -2 2, 0 3 l7.5 -7.5" fill="skyblue" />
+        <path d="M47 68 l 4 -15 c 0 0, 2 -2 ,2 2 l-4 15 c 0 0, -2 2 ,-2 -2" fill="#e2e2e2" />
+    </g>
+</svg>

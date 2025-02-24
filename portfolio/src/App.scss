@@ -1,0 +1,584 @@
+@font-face {
+    font-family: "Queenside";
+    src: url('./assets/fonts/Queensides.ttf');
+}
+
+@font-face {
+    font-family: "Oxianum";
+    src: url('./assets/fonts/Oxanium-Medium.ttf');
+}
+
+:root {
+    --dark: #1d1d1d;
+    --light: #252525;
+    --white: #e2e2e2;
+
+    --purple: rgb(178, 63, 255);
+    --blue: rgb(65, 151, 250);
+    --green: rgb(99, 250, 99);
+    --orange: rgb(247, 130, 84);
+    --yellow: rgb(243, 216, 129);
+}
+
+$sections: (
+    1:var(--blue),
+    2:var(--green),
+    3:var(--orange),
+    4:var(--purple),
+    5:var(--yellow)
+);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Queenside",
+        "Segoe UI",
+        sans-serif;
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--dark
+    );
+}
+
+*::-webkit-scrollbar-thumb {
+    background: var(--light);
+    border-radius: 20px;
+    border: 1px solid transparent;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: var(--dark);
+    border-color: rgba(204, 204, 204, 0.4);
+}
+
+#root {
+    transition: all .3s ease;
+    background-color: var(--light);
+}
+
+section {
+    min-height: 100vh;
+    padding: 1.5rem 0;
+}
+
+#contact > section {
+    min-height: 1px;
+    font-family: 'Oxianum', sans-serif;
+}
+
+section h3{
+    margin-top: 3rem;
+    font-size: 2rem;
+}
+
+section h4{
+    font-size: 1.6rem;
+    width: 90%;
+    margin: 1rem auto;
+}
+
+section h3, section h4{
+    color: var(--white);
+    font-family: 'Oxianum', 'Segoe UI', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section:nth-of-type(2n+1) {
+    background-color: var(--dark);
+}
+
+.scrollUp,
+.scrollDown {
+    position: absolute;
+    right: 4vw;
+    display: flex;
+    align-items: center;
+}
+
+#accueil .scrollDown{
+    bottom: 3vh;
+}
+
+.scrollDown {
+    flex-direction: column;
+}
+
+.scrollUp {
+    flex-direction: column-reverse;
+}
+
+.scrollUp .upanddown,
+.scrollDown .upanddown {
+    width: 50px;
+}
+
+.scrollUp .upanddown {
+    rotate: 180deg;
+}
+
+@media screen and (min-width:1024px) {
+
+    .scrollUp,
+    .scrollDown {
+        right: 2vw;
+        width: 10vh;
+    }
+}
+
+/* Navigation */
+
+nav {
+    width: 50%;
+    position: fixed;
+    left: 25%;
+    bottom: 5vh;
+    border-radius: 50px;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid var(--white);
+    background-color: var(--dark);
+    display: none;
+    transition: all .5s;
+}
+
+nav:hover{
+    background-color: var(--light);
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    transition: all .5s ease;
+    padding: 5px;
+    margin: 5px;
+}
+
+nav a svg {
+    border-radius: 50%;
+    transition: all .5s ease;
+}
+
+nav a:nth-of-type(1) svg{
+    stroke: turquoise;
+}
+
+@each $index, $section in $sections {
+    nav a:nth-of-type(#{$index}) svg {
+        stroke: $section;
+    }
+
+    nav a:nth-of-type(#{$index}):hover {
+        background-color: $section;
+    }
+}
+
+nav a:hover svg {
+    stroke: var(--dark);
+}
+
+/* Accueil */
+
+h1,
+h2 {
+    color: rgb(226, 226, 226);
+    text-shadow: 0 0 1.5rem var(--white);
+    animation: neon 3s;
+}
+
+.upanddown {
+    animation: upanddown 2s infinite;
+}
+
+.oxianum {
+    font-family: "Oxianum", "Segoe UI", sans-serif;
+}
+
+#scrolldown:hover p {
+    text-shadow: 0 0 1rem var(--white);
+}
+
+@media screen and (min-width:1024px) {
+    #accueil img:first-of-type {
+        margin-left: 10%;
+    }
+
+    #accueil img:last-of-type {
+        margin-right: 5%;
+    }
+
+    #accueil>div.text-center {
+        width: 50%;
+    }
+
+    #accueil>div>h1 {
+        font-size: 3rem;
+    }
+
+    #accueil>div>h2 {
+        font-size: 2rem;
+    }
+
+    nav {
+        display: flex;
+    }
+}
+
+/* A propos */
+
+#propos > div p{
+    width: 90%;
+    margin: 5vh auto;
+    color: var(--white);
+}
+
+#propos p span{
+    font-weight: 700;
+}
+
+@media screen and (min-width:768px) {
+
+    #propos > div img {
+        width: 50%;
+        margin: 3vh auto;
+    }
+}
+
+@media screen and (min-width:1024px) {
+
+    #propos > div p{
+        width: 40%;
+        font-size: 1.1rem;
+    }
+
+    #propos > div img {
+        width: 40%;
+    }
+
+    #propos > div {
+        display: flex;
+        margin-top: 10vh;
+        align-items: center;
+    }
+}
+
+/* Projets */
+
+.projectCard{
+    width: 90%;
+    margin: 2rem auto;
+    border-bottom: 1px solid var(--white);
+    padding-bottom: .5rem;
+    background-color: var(--light);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: .5rem;
+}
+
+.projectCard h3{
+    margin-top: 1rem;
+    color: var(--white);
+}
+
+.projectCard p{
+    width: 90%;
+    margin: .5rem auto;
+    color: var(--white);
+    font-family: "Oxianum", "Segoe UI", sans-serif;
+    text-align: center;
+}
+
+.projectCard > img{
+    border: 1px solid var(--light);
+    border-bottom: none;
+}
+
+.projectCard_technos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.projectCard_technos img {
+    width: 33%;
+    padding: 1rem;
+    aspect-ratio: 1/1;
+}
+
+@media screen and (min-width:768px) {
+
+    #projects > div {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .projectCard{
+        width: 40%;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    #projects > div{
+        width: 80%;
+        margin: 1rem auto;
+    }
+
+    .projectCard{
+        width: 30%;
+    }
+}
+
+/* Contact */
+
+#contact {
+    min-height: 70vh;
+}
+
+form{
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+form input, textarea{
+    background-color: var(--light);
+    color: var(--white);
+    width: 100%;
+    padding: .3rem .5rem;
+    border-radius: 1rem;
+    outline: none;
+    border: 1px solid transparent;
+    transition: border-color .3s ease;
+}
+
+form input:focus, textarea:focus{
+    border-color: var(--blue);
+}
+
+form input::placeholder, textarea::placeholder{
+    color: var(--white);
+}
+
+form textarea{
+    resize:vertical
+}
+
+form button{
+    background-color: var(--white);
+    padding: .6rem;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    font-family: 'Oxianum', sans-serif;
+    transition: all .4s;
+    cursor: pointer;
+    border: 1px solid var(--white);
+}
+
+form button:hover{
+    background-color: var(--light);
+    color: var(--white);
+}
+
+form button:active{
+    background-color: var(--dark);
+}
+
+@media screen and (min-width:1024px) {
+    form {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 70%;
+    }
+
+    form .form-group:nth-of-type(1), form .form-group:nth-of-type(2){
+        width: 40%;
+    }
+
+    form .form-group:nth-of-type(3){
+        width: 90%;
+    }
+
+    form button{
+        width: 90%;
+        margin-left: 0;
+    }
+}
+
+/* Links */
+
+#links > div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+#links > div svg{
+    stroke: azure;
+}
+
+#links > div > a{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: .5rem;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    border-color: transparent;
+    transition: all .3s ease;
+}
+
+#links > div > a:first-of-type{
+    border-color: azure;
+}
+
+#links > div > a:nth-of-type(2){
+    border-radius: 5%;
+    border-color: #0A66C2;
+}
+
+#links > div > a:nth-of-type(2) svg{
+    stroke: #0A66C2;
+}
+
+#links > div > a:nth-of-type(3){
+    border-color: var(--green);
+}
+
+#links > div > a:nth-of-type(3) svg {
+    stroke: var(--green);
+}
+
+@media screen and (min-width:768px) {
+
+    #links > div{
+        flex-direction: row;
+    }
+
+    #links > div > a:first-of-type{
+        width: 50%;
+        margin: 2rem 25%;
+    }
+
+    #links > div > a{
+        border-radius: 5%;
+        width: 25%;
+    }
+}
+
+@media screen and (min-width:1024px) {
+
+    #links{
+        min-height: 50vh;
+    }
+
+    #links > div{
+        min-height: 30vh;
+    }
+
+    #links > div > a:first-of-type{
+        width: 15%;
+        margin: 2rem 0;
+    }
+
+    #links > div > a{
+        width: 15%;
+    }
+
+    #links > div > a:hover{
+        scale: 1.1;
+    }
+}
+
+/* links hover */
+
+#links > div > a:first-of-type:hover{
+    background-color: azure;
+}
+
+#links > div > a:nth-of-type(2):hover{
+    background-color: #0A66C2;
+}
+
+#links > div > a:nth-of-type(3):hover{
+    background-color: var(--green);
+}
+
+#links > div > a:nth-of-type(1):hover svg{
+    stroke: #1d1d1d;
+}
+
+#links > div > a:nth-of-type(2):hover svg{
+    stroke: azure;
+}
+
+#links > div > a:nth-of-type(3):hover svg{
+    stroke: darkgreen;
+}
+
+/* Animations */
+
+@keyframes neon {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: .8;
+    }
+
+    48% {
+        opacity: .1;
+    }
+
+    50% {
+        opacity: .7;
+    }
+
+    52% {
+        opacity: .1;
+    }
+
+    60% {
+        opacity: .7;
+    }
+
+    70% {
+        opacity: .2;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes upanddown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(40%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

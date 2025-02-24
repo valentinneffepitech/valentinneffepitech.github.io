@@ -1,0 +1,22 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="background-color: #1d1d1d">
+    <style>
+        @keyframes draw {
+            from {
+                stroke-dasharray: 0, 1000;
+            }
+
+            to {
+                stroke-dasharray: 1000, 0;
+            }
+        }
+
+        polyline {
+            stroke: white;
+            fill: none;
+            stroke-width: 1;
+            animation: draw 5s ease-in;
+        }
+    </style>
+    <polyline points="55,90 55,10 90,90 90,10" />
+    <polyline points="55,90 55,10 30,90 10,10" />
+</svg>
